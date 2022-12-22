@@ -1,0 +1,381 @@
+// --------------------------------------- Products ----------------------------------
+.product-section {
+  background-image: url(/src/images/products/product-background-mob.png);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0;
+
+  @media (min-width: $tablet) {
+    background-image: url(/src/images/products/product-background-tablet.png);
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url(/src/images/products/product-background-desktop.png);
+  }
+}
+
+.section-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.section__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  margin-bottom: 150px;
+
+  @media (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 120px;
+    font-size: 36px;
+    line-height: 1.26;
+  }
+}
+
+.product__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 16;
+  }
+}
+
+.product-ice-cream {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  background: #aec6a5;
+  border-radius: 24px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+      top: -110px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+      top: -165px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(/src/images/products/ice-cream-mob.jpg);
+    background-size: contain;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+      top: -120px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+      top: -175px;
+      background-image: url(/src/images/products/ice-cream-desktop.jpg);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 225px;
+    height: 430px;
+  }
+  @media (min-width: $desktop) {
+    width: 370px;
+    height: 536px;
+  }
+}
+
+.product-ice-coffee {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  background: #efd478;
+  border-radius: 24px;
+  text-align: center;
+  &::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+      top: -110px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+      top: -165px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(/src/images/products/ice-coffee-mob.jpg);
+    background-size: contain;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+      top: -120px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+      top: -175px;
+      background-image: url(/src/images/products/ice-coffee-desktop.jpg);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 225px;
+    height: 430px;
+  }
+  @media (min-width: $desktop) {
+    width: 370px;
+    height: 536px;
+  }
+}
+
+.product-milkshakes {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  background: #d6936d;
+  border-radius: 24px;
+  text-align: center;
+  &::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+      top: -110px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+      top: -165px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(/src/images/products/milkshakes-mob.jpg);
+    background-size: contain;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+      top: -120px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+      top: -175px;
+      background-image: url(/src/images/products/milkshakes-desktop.jpg);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 225px;
+    height: 430px;
+  }
+  @media (min-width: $desktop) {
+    width: 370px;
+    height: 536px;
+  }
+}
+
+.product-item-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 1.22;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 165px;
+    padding-bottom: 65px;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+
+.product-item-subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media (min-width: $tablet) {
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+
+.product__picture {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @media (min-width: $tablet) {
+    top: -120px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 302px;
+    height: 302px;
+    top: -180px;
+  }
+}
+
+.product-arrow {
+  display: block;
+  width: 40px;
+  height: 16px;
+  fill: var(--title-black-color);
+  // margin-bottom: 16px;
+  position: absolute;
+  bottom: 16px;
+
+  @media (min-width: $desktop) {
+    bottom: 60px;
+  }
+}
+
+.product-text-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
