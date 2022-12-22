@@ -1,177 +1,105 @@
 <header class="header">
-  <div class="container header__flex">
-    <a class="logo" href="#">
-      <picture>
-        <source
-          srcset="
-            ./images/hero-header/logo-desk.png    1x,
-            ./images/hero-header/logo-desk-2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
+	<div class="container header__flex">
 
-        <source
-          srcset="
-            ./images/hero-header/logo-tab.png    1x,
-            ./images/hero-header/logo-tab-2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
 
-        <img
-          class="logo__img"
-          srcset="
-            ./images/hero-header/logo-mob.png    1x,
-            ./images/hero-header/logo-mob-2x.png 2x
-          "
-          src="./images/hero-header/logo-mob.png"
-          alt="logo"
-        />
-      </picture>
-    </a>
+		<a class="logo" href="#">
+			<picture>
+				<source srcset="./images/hero-header/logo-desk.png 1x, ./images/hero-header/logo-desk-2x.png 2x"
+					media="(min-width: 1200px)" />
 
-    <nav>
-      <ul class="nav__list">
-        <li class="nav__item">Home</li>
-        <li class="nav__item">How it’s made?</li>
-        <li class="nav__item">Our products</li>
-        <li class="nav__item">Contact</li>
-      </ul>
-    </nav>
+				<source srcset="./images/hero-header/logo-tab.png 1x, ./images/hero-header/logo-tab-2x.png 2x"
+					media="(min-width: 768px)" />
 
-    <div class="burger__flex test">
-      <div class="burger">
-        <button
-          class="burger__button"
-          type="button"
-          aria-expanded="false"
-          aria-controls="burger"
-          data-menu-button
-        >
-          <svg width="32" height="32" aria-label="Меню бургер">
-            <use
-              class="burger__icon"
-              href="./images/icons.svg#icon-menu-burger"
-            ></use>
-            <use
-              class="burger__icon--close"
-              href="./images/icons.svg#icon-menu-cross"
-            ></use>
-          </svg>
-        </button>
+				<img class="logo__img" srcset="./images/hero-header/logo-mob.png 1x, ./images/hero-header/logo-mob-2x.png 2x"
+					src="./images/hero-header/logo-mob.png" alt="logo" />
+			</picture>
+		</a>
 
-        <div class="burger__menu" id="burger" data-menu>
-          <ul class="burger__list">
-            <li class="burger__item">Home</li>
-            <li class="burger__item">How it’s made?</li>
-            <li class="burger__item">Our products</li>
-            <li class="burger__item">Contact</li>
-          </ul>
-          <button class="burger__order" type="button">
-            <span class="order__text">Buy now</span>
-            <svg height="12" width="12">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <button class="order" type="button">
-        <span class="order__text">Buy now</span>
-        <svg height="12" width="12">
-          <use href="./images/icons.svg#icon-arrow"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
+		<nav>
+			<ul class="nav__list">
+				<li class="nav__item">Home</li>
+				<li class="nav__item">How it’s made?</li>
+				<li class="nav__item">Our products</li>
+				<li class="nav__item">Contact</li>
+			</ul>
+		</nav>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero__title">ice cream made with passion</h1>
+		<div class="burger__flex test">
+			<div class="burger">
+				<button class="burger__button" type="button" aria-expanded="false" aria-controls="burger" data-menu-button>
+					<svg width="32" height="32" aria-label="Меню бургер">
+						<use class="burger__icon" href="./images/icons.svg#icon-menu-burger"></use>
+						<use class="burger__icon--close" href="./images/icons.svg#icon-menu-cross"></use>
+					</svg>
+				</button>
 
-      <div class="hero__anchors">
-        <a class="hero__products" href="#"><span>Products</span></a>
-        <a class="hero__how" href="#">How it’s made? </a>
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
+				<div class="burger__menu" id="burger" data-menu>
+					<ul class="burger__list">
+						<li class="burger__item">Home</li>
+						<li class="burger__item">How it’s made?</li>
+						<li class="burger__item">Our products</li>
+						<li class="burger__item">Contact</li>
+					</ul>
+					<button class="burger__order" type="button">
+						<span class="order__text">Buy now</span>
+						<svg height="12" width="12">
+							<use href="./images/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+				</div>
 
-        <picture>
-          <source
-            srcset="
-              ./images/hero-header/dish-desk.png    1x,
-              ./images/hero-header/dish-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
+			</div>
+			<button class="order" type="button">
+				<span class="order__text">Buy now</span>
+				<svg height="12" width="12">
+					<use href="./images/icons.svg#icon-arrow"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
 
-          <img
-            class="hero__dish"
-            srcset="
-              ./images/hero-header/dish-tab.png    1x,
-              ./images/hero-header/dish-tab-2x.png 2x
-            "
-            src="./images/hero-header/dish-tab.png"
-            alt="dish with ice-cream"
-          />
-        </picture>
+	<section class="hero">
+		<div class="container">
+			<h1 class="hero__title">ice cream made with passion</h1>
 
-        <picture>
-          <source
-            srcset="
-              ./images/hero-header/dots-desk.png    1x,
-              ./images/hero-header/dots-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
+			<div class="hero__anchors">
+				<a class="hero__products" href="#"><span>Products</span></a>
+				<a class="hero__how" href="#">How it’s made? </a>
+				<p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+					ut labore et</p>
 
-          <source
-            srcset="
-              ./images/hero-header/dots-tab.png    1x,
-              ./images/hero-header/dots-tab-2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
+				<picture>
+					<source srcset="./images/hero-header/dish-desk.png 1x, ./images/hero-header/dish-desk-2x.png 2x"
+						media="(min-width: 1200px)" />
 
-          <img
-            class="hero__dots"
-            srcset="
-              ./images/hero-header/dots-mob.png    1x,
-              ./images/hero-header/dots-mob-2x.png 2x
-            "
-            src="./images/hero-header/dots-mob.png"
-            alt="dots"
-          />
-        </picture>
+					<img class="hero__dish" srcset="./images/hero-header/dish-tab.png 1x, ./images/hero-header/dish-tab-2x.png 2x"
+						src="./images/hero-header/dish-tab.png" alt="dish with ice-cream" />
+				</picture>
 
-        <picture>
-          <source
-            srcset="
-              ./images/hero-header/ice-cream-desk.png    1x,
-              ./images/hero-header/ice-cream-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
+				<picture>
+					<source srcset="./images/hero-header/dots-desk.png 1x, ./images/hero-header/dots-desk-2x.png 2x"
+						media="(min-width: 1200px)" />
 
-          <source
-            srcset="
-              ./images/hero-header/ice-cream-tab.png    1x,
-              ./images/hero-header/ice-cream-tab-2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
+					<source srcset="./images/hero-header/dots-tab.png 1x, ./images/hero-header/dots-tab-2x.png 2x"
+						media="(min-width: 768px)" />
 
-          <img
-            class="hero__ice-cream"
-            srcset="
-              ./images/hero-header/ice-cream-mob.png    1x,
-              ./images/hero-header/ice-cream-mob-2x.png 2x
-            "
-            src="./images/hero-header/ice-cream-mob.png"
-            alt="ice-cream"
-          />
-        </picture>
-      </div>
-    </div>
-  </section>
+					<img class="hero__dots" srcset="./images/hero-header/dots-mob.png 1x, ./images/hero-header/dots-mob-2x.png 2x"
+						src="./images/hero-header/dots-mob.png" alt="dots" />
+				</picture>
+
+				<picture>
+					<source srcset="./images/hero-header/ice-cream-desk.png 1x, ./images/hero-header/ice-cream-desk-2x.png 2x"
+						media="(min-width: 1200px)" />
+
+					<source srcset="./images/hero-header/ice-cream-tab.png 1x, ./images/hero-header/ice-cream-tab-2x.png 2x"
+						media="(min-width: 768px)" />
+
+					<img class="hero__ice-cream"
+						srcset="./images/hero-header/ice-cream-mob.png 1x, ./images/hero-header/ice-cream-mob-2x.png 2x"
+						src="./images/hero-header/ice-cream-mob.png" alt="ice-cream" />
+				</picture>
+
+			</div>
+		</div>
+	</section>
 </header>
