@@ -1,7 +1,12 @@
 <!-- -------------------------------------ingredients-modal--------- -->
 
-<div class="backdrop is-hidden">
-  <div class="ingredients-mdal-window">
+<div class="backdrop is-hidde" data-ingredients-modal>
+  <div class="ingredients-modal-window">
+    <button class="ingredients-modal-close">
+      <svg class="ingredients-modal-close__icon">
+        <use href="/src/images/icons.svg#icon-menu-cross"></use>
+      </svg>
+    </button>
     <h3 class="ingredients-title">Chololate icecream</h3>
     <picture class="ingredients-picture">
       <source
@@ -58,13 +63,14 @@
     </div>
 
     <form class="ingredients-form" action="">
-      <label for=""></label>
-      <input type="name" placeholder="Name" />
-      <label for=""></label>
-      <input type="tel" placeholder="Phone" />
-      <label for=""></label>
+      <label for="name"></label>
+      <input class="form-name" type="name" placeholder="Name" />
+      <label for="tel"></label>
+      <input class="form-tel" type="tel" placeholder="Phone" />
+      <label for="comment"></label>
       <textarea
-        name=""
+        class="form-comment"
+        name="comment"
         id=""
         cols="30"
         rows="10"
