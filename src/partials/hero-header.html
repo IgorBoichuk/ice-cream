@@ -16,10 +16,10 @@
 
 		<nav>
 			<ul class="nav__list">
-				<li class="nav__item"><a href="#">Home</a></li>
-				<li class="nav__item"><a href="#">How it’s made?</a></li>
-				<li class="nav__item"><a href="#">Our products</a></li>
-				<li class="nav__item"><a href="#">Contact</a></li>
+				<li class="nav__item"><a href="#home">Home</a></li>
+				<li class="nav__item"><a href="#how">How it’s made?</a></li>
+				<li class="nav__item"><a href="#products">Our products</a></li>
+				<li class="nav__item"><a href="#contacts">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -34,10 +34,10 @@
 
 				<div class="burger__menu" id="burger" data-menu>
 					<ul class="burger__list">
-						<li class="burger__item">Home</li>
-						<li class="burger__item">How it’s made?</li>
-						<li class="burger__item">Our products</li>
-						<li class="burger__item">Contact</li>
+						<li class="burger__item"><a href="#home">Home</a></li>
+						<li class="burger__item"><a href="#how">How it’s made?</a></li>
+						<li class="burger__item"><a href="#products">Our products</a></li>
+						<li class="burger__item"><a href="#contacts">Contact</a></li>
 					</ul>
 					<button class="burger__order" type="button">
 						<span class="order__text">Buy now</span>
@@ -56,62 +56,62 @@
 			</button>
 		</div>
 	</div>
-
-	<section class="hero">
-		<div class="container">
-			<h1 class="hero__title">ice cream made with passion</h1>
-
-			<div class="hero__anchors">
-				<a class="hero__products" href="#"><span>Products</span></a>
-				<a class="hero__how" href="#">How it’s made? </a>
-			</div>
-
-			<a class="hero__description">
-				<p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt
-					ut labore et</p>
-				<svg height="16" width="40">
-					<use class="hero__arrow" href="./images/icons.svg#icon-big-arrow"></use>
-				</svg>
-			</a>
-
-			<ul class="hero__statistic">
-				<li class="statistic statistic__number">16</li>
-				<li class="statistic statistic__title">cafes</li>
-				<li class="statistic statistic__number">23</li>
-				<li class="statistic statistic__title">food trucks</li>
-			</ul>
-
-		</div>
-		<picture>
-			<source srcset="./images/hero-header/dish-desk.png 1x, ./images/hero-header/dish-desk-2x.png 2x"
-				media="(min-width: 1200px)" />
-
-			<img class="hero__dish" srcset="./images/hero-header/dish-tab.png 1x, ./images/hero-header/dish-tab-2x.png 2x"
-				src="./images/hero-header/dish-tab.png" alt="dish with ice-cream" />
-		</picture>
-
-		<picture>
-			<source srcset="./images/hero-header/dots-desk.png 1x, ./images/hero-header/dots-desk-2x.png 2x"
-				media="(min-width: 1200px)" />
-
-			<source srcset="./images/hero-header/dots-tab.png 1x, ./images/hero-header/dots-tab-2x.png 2x"
-				media="(min-width: 768px)" />
-
-			<img class="hero__dots" srcset="./images/hero-header/dots-mob.png 1x, ./images/hero-header/dots-mob-2x.png 2x"
-				src="./images/hero-header/dots-mob.png" alt="dots" />
-		</picture>
-
-		<picture>
-			<source srcset="./images/hero-header/ice-cream-desk.png 1x, ./images/hero-header/ice-cream-desk-2x.png 2x"
-				media="(min-width: 1200px)" />
-
-			<source srcset="./images/hero-header/ice-cream-tab.png 1x, ./images/hero-header/ice-cream-tab-2x.png 2x"
-				media="(min-width: 768px)" />
-
-			<img class="hero__ice-cream"
-				srcset="./images/hero-header/ice-cream-mob.png 1x, ./images/hero-header/ice-cream-mob-2x.png 2x"
-				src="./images/hero-header/ice-cream-mob.png" alt="ice-cream" />
-		</picture>
-	</section>
 </header>
+
+<section class="hero" id="home">
+	<div class="container">
+		<h1 class="hero__title">ice cream made with passion</h1>
+
+		<div class="hero__anchors">
+			<a class="hero__products" href="#products"><span>Products</span></a>
+			<a class="hero__how" href="#how">How it’s made? </a>
+		</div>
+
+		<a class="hero__description">
+			<p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt
+				ut labore et</p>
+			<svg height="16" width="40">
+				<use class="hero__arrow" href="./images/icons.svg#icon-big-arrow"></use>
+			</svg>
+		</a>
+
+		<ul class="hero__statistic">
+			<li class="statistic statistic__number">16</li>
+			<li class="statistic statistic__title">cafes</li>
+			<li class="statistic statistic__number">23</li>
+			<li class="statistic statistic__title">food trucks</li>
+		</ul>
+
+	</div>
+	<picture>
+		<source srcset="./images/hero-header/dish-desk.png 1x, ./images/hero-header/dish-desk-2x.png 2x"
+			media="(min-width: 1200px)" />
+
+		<img class="hero__dish" srcset="./images/hero-header/dish-tab.png 1x, ./images/hero-header/dish-tab-2x.png 2x"
+			src="./images/hero-header/dish-tab.png" alt="dish with ice-cream" />
+	</picture>
+
+	<picture>
+		<source srcset="./images/hero-header/dots-desk.png 1x, ./images/hero-header/dots-desk-2x.png 2x"
+			media="(min-width: 1200px)" />
+
+		<source srcset="./images/hero-header/dots-tab.png 1x, ./images/hero-header/dots-tab-2x.png 2x"
+			media="(min-width: 768px)" />
+
+		<img class="hero__dots" srcset="./images/hero-header/dots-mob.png 1x, ./images/hero-header/dots-mob-2x.png 2x"
+			src="./images/hero-header/dots-mob.png" alt="dots" />
+	</picture>
+
+	<picture>
+		<source srcset="./images/hero-header/ice-cream-desk.png 1x, ./images/hero-header/ice-cream-desk-2x.png 2x"
+			media="(min-width: 1200px)" />
+
+		<source srcset="./images/hero-header/ice-cream-tab.png 1x, ./images/hero-header/ice-cream-tab-2x.png 2x"
+			media="(min-width: 768px)" />
+
+		<img class="hero__ice-cream"
+			srcset="./images/hero-header/ice-cream-mob.png 1x, ./images/hero-header/ice-cream-mob-2x.png 2x"
+			src="./images/hero-header/ice-cream-mob.png" alt="ice-cream" />
+	</picture>
+</section>
