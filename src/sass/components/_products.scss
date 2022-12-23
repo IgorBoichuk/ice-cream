@@ -368,6 +368,7 @@
   // margin-bottom: 16px;
   position: absolute;
   bottom: 16px;
+  cursor: pointer;
 
   @media (min-width: $desktop) {
     bottom: 60px;
