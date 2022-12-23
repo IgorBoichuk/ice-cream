@@ -1,50 +1,61 @@
 <!-- -------------------------------------ingredients-modal--------- -->
 
-<h3>Chololate icecream</h3>
-<picture class="ingredients-picture">
-  <source
-    class="ingredients-img"
-    srcset="
-      ./images/products/ingrade-ice-cream-mob.jpg    1x,
-      ./images/products/ingrade-ice-cream-mob-2x.jpg 2x
-    "
-    media="(min-widht: 768px)"
-  />
-</picture>
-<ul class="ingredients-energy-value">
-  <li>320</li>
-  <li>4g</li>
-  <li>8,2g</li>
-  <li>40,4g</li>
-</ul>
+<div class="backdrop">
+  <div class="ingredients-mdal-window container">
+    <h3 class="ingredients-title">Chololate icecream</h3>
+    <picture class="ingredients-picture">
+      <source
+        class="ingredients-img"
+        srcset="
+          ./images/products/ingrade-ice-cream-mob.jpg    1x,
+          ./images/products/ingrade-ice-cream-mob-2x.jpg 2x
+        "
+        media="(min-widht: 768px)"
+      />
+    </picture>
+    <ul class="ingredients-energy-value">
+      <li>320</li>
+      <li>4g</li>
+      <li>8,2g</li>
+      <li>40,4g</li>
+    </ul>
 
-<p>Ingredients</p>
+    <p>Ingredients</p>
+    <div class="list-wrapper">
+      <ul class="ingredients-list">
+        <li class="ingredients-list-item">Milk</li>
+        <li class="ingredients-list-item">Belgian chocolate</li>
+        <li class="ingredients-list-item">Cream</li>
+        <li class="ingredients-list-item">Cocoa powder</li>
+        <li class="ingredients-list-item">Sugar</li>
+        <li class="ingredients-list-item">Vanilla sugar</li>
+      </ul>
 
-<ul class="ingredients-list">
-  <li class="ingredients-list-item">Milk</li>
-  <li class="ingredients-list-item">Belgian chocolate</li>
-  <li class="ingredients-list-item">Cream</li>
-  <li class="ingredients-list-item">Cocoa powder</li>
-  <li class="ingredients-list-item">Sugar</li>
-  <li class="ingredients-list-item">Vanilla sugar</li>
-</ul>
+      <ul class="ingredients-weight">
+        <li class="ingredients-weight-item">100ml</li>
+        <li class="ingredients-weight-item">20g</li>
+        <li class="ingredients-weight-item">150 ml</li>
+        <li class="ingredients-weight-item">30g</li>
+        <li class="ingredients-weight-item">40g</li>
+        <li class="ingredients-weight-item">10g</li>
+      </ul>
+    </div>
 
-<ul class="ingredients-weight">
-  <li class="ingredients-weight-item">100ml</li>
-  <li class="ingredients-weight-item">20g</li>
-  <li class="ingredients-weight-item">150 ml</li>
-  <li class="ingredients-weight-item">30g</li>
-  <li class="ingredients-weight-item">40g</li>
-  <li class="ingredients-weight-item">10g</li>
-</ul>
+    <form action="">
+      <label for=""></label>
+      <input type="name" placeholder="Name" />
+      <label for=""></label>
+      <input type="tel" placeholder="Phone" />
+      <label for=""></label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Comment"
+      ></textarea>
+    </form>
 
-<form action="">
-  <label for=""></label>
-  <input type="name" placeholder="Name" />
-  <label for=""></label>
-  <input type="tel" placeholder="Phone" />
-  <label for=""></label>
-  <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
-</form>
-
-<button type="submit">Submit</button>
+    <button class="submit-button" type="submit">Submit</button>
+  </div>
+</div>
