@@ -68,7 +68,7 @@
 }
 
 .slider {
-  display: flex;
+  // display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -97,9 +97,8 @@
   padding-top: 35px;
   padding-bottom: 35px;
   margin-top: 32px;
-  min-width: 280px;
+
   @media screen and (min-width: 768px) {
-    min-width: 705px;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 28px;
@@ -157,5 +156,15 @@ p.customer__text {
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     margin-bottom: 272px;
+  }
+}
+
+.swiper-pagination {
+  margin-bottom: 393px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 381px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 228px;
   }
 }

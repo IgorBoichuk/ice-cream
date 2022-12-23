@@ -1,0 +1,178 @@
+.contacts {
+    background: #84A178;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+    height: 1095px;
+
+}
+
+.contact__card-list {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    top: -358px;
+    left: 0;
+}
+
+.contacts__company {
+    width: 280px;
+    background: #FCFCFC;
+    border-radius: 24px;
+    padding: 40px 32px 24px 32px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts__name-wrap {
+    display: inline-block;
+    background: #F8D24E;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+// .contacts__name-foodtruck {
+//     padding: 4px 22px;
+//     display: block;
+//     width: 130px;
+//     height: 22px;
+//     background: #F8D24E;
+//     border-radius: 4px;
+//     margin-bottom: 32px;
+// }
+
+.contacts__name {
+    display: block;
+    padding: 4px 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+// .contacts__name-food {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     line-height: calc(14 / 12);
+//     letter-spacing: 0.04em;
+//     color: #131313;
+// }
+
+.contacts__location {
+    // height: 70px;   
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__location-text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: calc(22 / 12);
+letter-spacing: 0.04em;
+color: #131313;
+margin-bottom: 8px;
+}
+
+.contacts__location-link {
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: #D6936D;
+}
+
+.contacts__location-link:hover,
+.contacts__location-link:focus {
+    text-decoration: underline;
+}
+.working-days {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    color: #131313;
+}
+.working-time {
+    // width: 124px;
+    // height: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    color: #ABABAB;
+}
+
+.contacts__week {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.contacts__week-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.contacts__address {
+    padding-top: 24px;
+}
+.address-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    color: #131313;
+}
+.address-link:not(:last-child) {
+    margin-bottom: 6px;
+}
+.contacts__buttons {
+    position: absolute;
+    top: 935px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contacts__button   {
+    width: 196px;
+    padding: 12px 35px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    background: #F8D24E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F8D24E;
+    // border-style: none;
+}
+.contacts__button:not(:last-child) {
+    margin-bottom: 16px;
+}
+.contacts__button-icon {
+    margin-left: 4px;
+}
+.contacts__button-second {
+    background-color: #84A178;
+}
+
+
+
+
+
+
+
