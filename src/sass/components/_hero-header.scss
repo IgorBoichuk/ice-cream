@@ -258,7 +258,6 @@
 }
 
 .hero__title {
-	padding-top: 40px;
 	font-family: "Seymour One";
 	font-weight: 400;
 	font-size: 26px;
@@ -269,7 +268,12 @@
 
 	@media screen and (max-width: 1199px) {
 		width: 247px;
-		height: 97px;
+	}
+
+	@media screen and (min-widt: 768px) and (max-width: 1199px) {
+		width: 247px;
+
+		padding-top: 5px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -277,6 +281,7 @@
 		line-height: 1.26;
 		width: 367px;
 		height: 144px;
+		padding-top: 40px;
 	}
 }
 
