@@ -252,7 +252,13 @@
 	position: relative;
 }
 
+.hero__anchor {
+	position: absolute;
+	top: -105;
+}
+
 .hero__title {
+	padding-top: 40px;
 	font-family: "Seymour One";
 	font-weight: 400;
 	font-size: 26px;
@@ -285,7 +291,7 @@
 		margin-top: 24px;
 	}
 	@media screen and (min-width: 1200px) {
-		margin-top: 28px;
+		margin-top: 48px;
 	}
 }
 
@@ -386,7 +392,7 @@
 		line-height: 1.42;
 		width: 200px;
 		height: 80px;
-		margin-top: 149px;
+		margin-top: 129px;
 		margin-left: 241px;
 	}
 }
