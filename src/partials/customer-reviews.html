@@ -2,22 +2,37 @@
   <section class="gallery">
     <div class="container">
       <div class="gallery__slider">
-        <picture>
+        <picture class="gallery__image">
           <source
+            class="gallery__image-desc"
             srcset="
-              ./images/gallery-customer/gallery__slider-mobile.jpg     280w,
-              ./images/gallery-customer/gallery__slider-mobile2x.jpg   560w,
-              ./images/gallery-customer/gallery__slider-tablet.jpg     704w,
-              ./images/gallery-customer/gallery__slider-tablet2x.jpg  1408w,
-              ./images/gallery-customer/gallery__slider-desctop.jpg   1013w,
-              ./images/gallery-customer/gallery__slider-desctop2x.jpg 2026w
+              ./images/gallery-customer/gallery__slider-desctop.jpg   1x,
+              ./images/gallery-customer/gallery__slider-desctop2x.jpg 2x
             "
+            media="(min-widht: 1200px)"
+          />
+          <source
+            class="gallery__image-tab"
+            srcset="
+              ./images/gallery-customer/gallery__slider-tablet.jpg   1x,
+              ./images/gallery-customer/gallery__slider-tablet2x.jpg 2x
+            "
+            media="(min-widht: 768px)"
+          />
+          <source
+            class="gallery__image-mob"
+            srcset="
+              ./images/gallery-customer/gallery__slider-mobile.jpg   1x,
+              ./images/gallery-customer/gallery__slider-mobile2x.jpg 2x
+            "
+            media="(max-widht: 767px)"
           />
           <img
-            class="gallery__image"
-            src="./images/gallery-customer/gallery__slider-mobile.jpg"
+            class="gallery__image-desc"
+            src="./images/gallery-customer/gallery__slider-desctop.jpg"
             alt="ice cream"
-            sizes="100%"
+            width="1013px"
+            height="422px"
           />
         </picture>
       </div>
@@ -25,7 +40,7 @@
   </section>
 
   <section class="customer">
-    <div class="container">
+    <div class="container slider">
       <div class="customer__slider">
         <img
           class="customer__foto"
@@ -45,7 +60,6 @@
             atmosphere and polite staff.
           </p>
         </div>
-
         <p class="customer__title">Emily, Los Angeles</p>
       </div>
     </div>
