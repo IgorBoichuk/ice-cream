@@ -39,35 +39,36 @@
                 />
               </picture>
             </li>
+
             <li class="item red swiper-slide">
               <picture class="gallery__image">
                 <source
                   class="gallery__image-desc"
                   srcset="
-                    ./images/gallery-customer/gallery__slider-desctop.jpg   1x,
-                    ./images/gallery-customer/gallery__slider-desctop2x.jpg 2x
+                    ./images/gallery-customer/gallery__slider1.jpg    1x,
+                    ./images/gallery-customer/gallery__slider1_2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   class="gallery__image-tab"
                   srcset="
-                    ./images/gallery-customer/gallery__slider-tablet.jpg   1x,
-                    ./images/gallery-customer/gallery__slider-tablet2x.jpg 2x
+                    ./images/gallery-customer/gallery__slider1.jpg    1x,
+                    ./images/gallery-customer/gallery__slider1_2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   class="gallery__image-mob"
                   srcset="
-                    ./images/gallery-customer/gallery__slider-mobile.jpg   1x,
-                    ./images/gallery-customer/gallery__slider-mobile2x.jpg 2x
+                    ./images/gallery-customer/gallery__slider1.jpg    1x,
+                    ./images/gallery-customer/gallery__slider1_2x.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
                 <img
                   class="gallery__image-desc"
-                  src="./images/gallery-customer/gallery__slider-desctop.jpg"
+                  src="./images/gallery-customer/gallery__slider1_2x.jpg"
                   alt="ice cream"
                   width="1013px"
                   height="422px"
@@ -79,30 +80,30 @@
                 <source
                   class="gallery__image-desc"
                   srcset="
-                    ./images/gallery-customer/gallery__slider-desctop.jpg   1x,
-                    ./images/gallery-customer/gallery__slider-desctop2x.jpg 2x
+                    ./images/gallery-customer/gallery__slider2.jpg    1x,
+                    ./images/gallery-customer/gallery__slider2_2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   class="gallery__image-tab"
                   srcset="
-                    ./images/gallery-customer/gallery__slider-tablet.jpg   1x,
-                    ./images/gallery-customer/gallery__slider-tablet2x.jpg 2x
+                    ./images/gallery-customer/gallery__slider2.jpg    1x,
+                    ./images/gallery-customer/gallery__slider2_2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   class="gallery__image-mob"
                   srcset="
-                    ./images/gallery-customer/gallery__slider-mobile.jpg   1x,
-                    ./images/gallery-customer/gallery__slider-mobile2x.jpg 2x
+                    ./images/gallery-customer/gallery__slider2.jpg    1x,
+                    ./images/gallery-customer/gallery__slider2_2x.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
                 <img
                   class="gallery__image-desc"
-                  src="./images/gallery-customer/gallery__slider-desctop.jpg"
+                  src="./images/gallery-customer/gallery__slider2.jpg"
                   alt="ice cream"
                   width="1013px"
                   height="422px"
@@ -118,25 +119,75 @@
   <section class="customer">
     <div class="container slider">
       <div class="customer__slider">
-        <img
-          class="customer__foto"
-          srcset="
-            ./images/gallery-customer/customer__foto84.jpg  1x,
-            ./images/gallery-customer/customer__foto168.jpg 2x
-          "
-          src="./images/gallery-customer/customer__foto84.jpg"
-          alt="customer foto"
-          width="84"
-        />
+        <div class="wrapper swiper mySlider">
+          <ul class="list swiper-wrapper">
+            <li class="item blue swiper-slide">
+              <img
+                class="customer__foto"
+                srcset="
+                  ./images/gallery-customer/customer__foto84.jpg  1x,
+                  ./images/gallery-customer/customer__foto168.jpg 2x
+                "
+                src="./images/gallery-customer/customer__foto84.jpg"
+                alt="customer foto"
+                width="84"
+              />
+              <div class="customer__description">
+                <p class="customer__text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+              </div>
+              <p class="customer__title">Emily, Los Angeles</p>
+            </li>
 
-        <div class="customer__description">
-          <p class="customer__text">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
-          </p>
+            <li class="item red swiper-slide">
+              <img
+                class="customer__foto"
+                srcset="
+                  ./images/gallery-customer/customer__slider1.jpg    1x,
+                  ./images/gallery-customer/customer__slider1_2x.jpg 2x
+                "
+                src="./images/gallery-customer/customer__slider1_2x.jpg"
+                alt="customer foto"
+                width="84"
+              />
+
+              <div class="customer__description">
+                <p class="customer__text">
+                  Every day we come to you with friends after classes in
+                  college. We love your ice cream and casual atmosphere!
+                </p>
+              </div>
+              <p class="customer__title">Bryan, New-York</p>
+            </li>
+
+            <li class="item brown swiper-slide">
+              <img
+                class="customer__foto"
+                srcset="
+                  ./images/gallery-customer/customer__slider2.jpg    1x,
+                  ./images/gallery-customer/customer__slider2_2x.jpg 2x
+                "
+                src="./images/gallery-customer/customer__slider2_2x.jpg"
+                alt="customer foto"
+                width="84"
+              />
+
+              <div class="customer__description">
+                <p class="customer__text">
+                  Ice cream is my passion! I love your chocolate hazelnut ice
+                  cream! And I really like the excellent service - always served
+                  politely and quickly!
+                </p>
+              </div>
+              <p class="customer__title">Diana, Chicago</p>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
         </div>
-        <p class="customer__title">Emily, Los Angeles</p>
       </div>
     </div>
   </section>
