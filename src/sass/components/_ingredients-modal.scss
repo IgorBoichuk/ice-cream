@@ -35,7 +35,7 @@
   cursor: pointer;
   &__icon {
     position: absolute;
-    fill: #0a8817;
+    fill: var(--title-black-color);
     width: 20px;
     height: 20px;
   }
