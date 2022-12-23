@@ -1,7 +1,7 @@
 <!-- -------------------------------------ingredients-modal--------- -->
 
 <div class="backdrop is-hidden">
-  <div class="ingredients-mdal-window container">
+  <div class="ingredients-mdal-window">
     <h3 class="ingredients-title">Chololate icecream</h3>
     <picture class="ingredients-picture">
       <source
@@ -13,14 +13,26 @@
         media="(min-widht: 768px)"
       />
     </picture>
-    <ul class="ingredients-energy-value">
-      <li>320</li>
-      <li>4g</li>
-      <li>8,2g</li>
-      <li>40,4g</li>
+    <ul class="ingredients-energy-list">
+      <li class="ingredients-energy-item">
+        <p class="energy-value">320</p>
+        <p class="energy-mean">kcal</p>
+      </li>
+      <li class="ingredients-energy-item">
+        <p class="energy-value">4g</p>
+        <p class="energy-mean">Prote...</p>
+      </li>
+      <li class="ingredients-energy-item">
+        <p class="energy-value">8,2g</p>
+        <p class="energy-mean">Fats</p>
+      </li>
+      <li class="ingredients-energy-item">
+        <p class="energy-value">40,4g</p>
+        <p class="energy-mean">Carbs</p>
+      </li>
     </ul>
 
-    <p>Ingredients</p>
+    <p class="ingredients-subtitle">Ingredients</p>
     <div class="list-wrapper">
       <ul class="ingredients-list">
         <li class="ingredients-list-item">Milk</li>
@@ -41,7 +53,7 @@
       </ul>
     </div>
 
-    <form action="">
+    <form class="ingredients-form" action="">
       <label for=""></label>
       <input type="name" placeholder="Name" />
       <label for=""></label>

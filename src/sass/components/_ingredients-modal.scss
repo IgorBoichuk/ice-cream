@@ -16,8 +16,7 @@
   border: 2px solid #fcfcfc;
   border-radius: 10px;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 20px;
 
   top: 50%;
   left: 50%;
@@ -26,30 +25,88 @@
 
 .ingredients-title {
   font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
   display: flex;
   align-items: center;
   text-align: center;
   color: var(--title-black-color);
+  margin-bottom: 20px;
 }
 
-.ingredients-energy-value {
+.ingredients-energy-list {
   display: flex;
+  gap: 9px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.ingredients-energy-item {
+  width: 53px;
+  height: 75px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.energy-value {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  color: var(--title-black-color);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  width: 43px;
+  height: 43px;
+  background: #9cbe8f;
+  border-radius: 50%;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.energy-mean {
+}
+
+.ingredients-subtitle {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--title-black-color);
+  margin-bottom: 25px;
 }
 
 .list-wrapper {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+
+  color: var(--title-black-color);
+}
+
+.ingredients-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 25px;
 }
 
 .submit-button {
-  //   position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 51px 12px 36px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
+
   cursor: pointer;
   border: none;
   border-radius: 10px;
