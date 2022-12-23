@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]");e.addEventListener("click",(()=>{document.body.classList.toggle("hidden"),document.querySelector(".order").classList.toggle("block-none");const o="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!o),t.classList.toggle("is-open")}))})();
+//# sourceMappingURL=index.f36ca4b7.js.map
