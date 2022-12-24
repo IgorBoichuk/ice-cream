@@ -12,7 +12,6 @@
     height: 636px;
   }
 }
-
 .contact__card-list {
   position: absolute;
   display: flex;
@@ -34,7 +33,6 @@
     top: -128px;
   }
 }
-
 .contacts__company {
   width: 280px;
   background: #fcfcfc;
@@ -52,7 +50,6 @@
     height: 542px;
   }
 }
-
 .contacts__name-wrap {
   display: inline-block;
   background: #f8d24e;
@@ -62,16 +59,6 @@
     margin-bottom: 32px;
   }
 }
-// .contacts__name-foodtruck {
-//     padding: 4px 22px;
-//     display: block;
-//     width: 130px;
-//     height: 22px;
-//     background: #F8D24E;
-//     border-radius: 4px;
-//     margin-bottom: 32px;
-// }
-
 .contacts__name {
   display: block;
   padding: 4px 22px;
@@ -89,23 +76,10 @@
     line-height: 1.4;
   }
 }
-// .contacts__name-food {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 500;
-//     text-transform: uppercase;
-//     font-size: 12px;
-//     line-height: calc(14 / 12);
-//     letter-spacing: 0.04em;
-//     color: #131313;
-// }
-
 .contacts__location {
-  // height: 70px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
 }
-
 .contacts__location-text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -125,12 +99,15 @@
     margin-bottom: 8px;
   }
 }
-
 .contacts__location-link {
   font-size: 12px;
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   color: #d6936d;
+  &:hover,
+    &:focus {
+    text-decoration: underline;
+    }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.83;
@@ -138,11 +115,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
-}
-
-.contacts__location-link:hover,
-.contacts__location-link:focus {
-  text-decoration: underline;
 }
 .working-days {
   font-family: 'Montserrat';
@@ -160,8 +132,6 @@
   }
 }
 .working-time {
-  // width: 124px;
-  // height: 22px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -176,7 +146,6 @@
     font-size: 16px;
   }
 }
-
 .contacts__week {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -189,7 +158,6 @@
 .contacts__week-item:not(:last-child) {
   margin-bottom: 8px;
 }
-
 .contacts__address {
   padding-top: 24px;
 }
@@ -200,6 +168,9 @@
   font-size: 12px;
   line-height: calc(19 / 12);
   color: #131313;
+  &:not(:last-child) {
+      margin-bottom: 6px;
+    }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.5;
@@ -207,9 +178,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
-}
-.address-link:not(:last-child) {
-  margin-bottom: 6px;
 }
 .contacts__buttons {
   position: absolute;
@@ -225,7 +193,7 @@
     top: 474px;
   }
 }
-.contacts__button {
+.contacts__button-loc {
   width: 196px;
   padding: 12px 35px;
   margin: 0 auto;
@@ -240,17 +208,62 @@
   align-items: center;
   justify-content: center;
   border: 2px solid #f8d24e;
+  &:hover {
+      background-color: #0A8817;
+      border: 2px solid #0A8817;
+    }
+    &:focus {
+      background-color: #0A8817;
+      border: 2px solid #0A8817;
+      fill: #FFFFFF;
+      color: #FFFFFF;
+    }
+    &:disabled {
+      background-color: #ABABAB;
+      border: 2px solid #ABABAB;
+    }
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    }
   cursor: pointer;
   @media screen and (min-width: 768px) {
     height: 42px;
   }
 }
-.contacts__button:not(:last-child) {
-  margin-bottom: 16px;
-}
 .contacts__button-icon {
   margin-left: 4px;
 }
-.contacts__button-second {
-  background-color: #84a178;
+.contacts__button-franch {
+  width: 196px;
+  padding: 12px 35px;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  background-color: #84A178;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f8d24e;
+  &:hover {
+      border: 2px solid #0A8817;
+    }
+    &:focus {
+      border: 2px solid #0A8817;
+      fill: #FFFFFF;
+      color: #FFFFFF;
+    }
+    &:disabled {
+      border: 2px solid #ABABAB;
+    }
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    height: 42px;
+  }
 }
