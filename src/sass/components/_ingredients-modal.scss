@@ -19,6 +19,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+  }
 }
 
 .ingredients-modal-close {
@@ -45,10 +49,14 @@
   font-size: 20px;
   line-height: 1.4;
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--title-black-color);
   margin-bottom: 20px;
+}
+
+.ingredients-picture {
+  display: block;
 }
 
 .ingredients-energy-list {
@@ -124,6 +132,11 @@
   line-height: 176%;
   letter-spacing: 0.04em;
   color: var(--title-black-color);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .ingredients-form {
@@ -131,6 +144,7 @@
   flex-direction: column;
   gap: 5px;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .form-name {
@@ -142,6 +156,9 @@
   border-radius: 10px;
   color: red;
   padding-left: 10px;
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
 }
 
 .form-tel {
@@ -152,6 +169,9 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   padding-left: 10px;
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
 }
 
 .form-comment {
@@ -164,6 +184,9 @@
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
 }
 
 .submit-button {
