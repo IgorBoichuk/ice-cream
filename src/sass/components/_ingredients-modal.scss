@@ -7,6 +7,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 10;
 }
 
 .ingredients-modal-window {
@@ -20,7 +21,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 568px;
   }
 }
@@ -56,14 +57,19 @@
 }
 
 .ingredients-picture {
-  display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .ingredients-energy-list {
   display: flex;
   gap: 9px;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+  }
 }
 
 .ingredients-energy-item {
@@ -133,7 +139,7 @@
   letter-spacing: 0.04em;
   color: var(--title-black-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -156,7 +162,7 @@
   border-radius: 10px;
   color: red;
   padding-left: 10px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
   }
 }
@@ -169,7 +175,7 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   padding-left: 10px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
   }
 }
@@ -184,7 +190,7 @@
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
   }
 }
@@ -216,14 +222,4 @@
     color: var(--title-white-color);
     fill: var(--title-white-color);
   }
-
-  //   @media screen and (max-width: 767px) {
-  //     display: none;
-  //   }
-  //   @media screen and (min-width: 768px) and (max-width: 1199) {
-  //     margin-top: 24px;
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //     margin-top: 20px;
-  //   }
 }
