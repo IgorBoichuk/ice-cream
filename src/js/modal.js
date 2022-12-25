@@ -77,3 +77,50 @@
     refs.IngredientsModal.classList.toggle('is-hidden');
   }
 })();
+
+// Buy now-modal
+
+(() => {
+  const refs = {
+    openIngredientsModalBtn: document.querySelector(
+      '[data-buy-modal-open]'
+    ),
+    closeIngredientsModalBtn: document.querySelector(
+      '[data-buy-modal-close]'
+    ),
+    IngredientsModal: document.querySelector('[data-buy-modal]'),
+  };
+
+  refs.openIngredientsModalBtn.addEventListener('click', toggleModal);
+  refs.closeIngredientsModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle('modal-open');
+    refs.IngredientsModal.classList.toggle('is-hidden');
+  }
+})();
+
+// Buy now-modal 2
+
+(() => {
+  const refs = {
+    openIngredientsModalBtn: document.querySelector(
+      '[data-buy2-modal-open]'
+    ),
+    closeIngredientsModalBtn: document.querySelector(
+      '[data-buy2-modal-close]'
+    ),
+    IngredientsModal: document.querySelector('[data-buy2-modal]'),
+  };
+
+  refs.openIngredientsModalBtn.addEventListener('click', toggleModal);
+  refs.closeIngredientsModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle('modal-open');
+    refs.IngredientsModal.classList.toggle('is-hidden');
+  }
+})();
+
+
+

@@ -1,0 +1,38 @@
+<!-- Buy now modal -->
+
+<div class="backdrop is-hidden" data-buy-modal>
+	<div class="buy-modal-window">
+		<button class="ingredients-modal-close" data-buy-modal-close>
+			<svg class="ingredients-modal-close__icon">
+				<use href="/src/images/icons.svg#icon-modal-cross"></use>
+			</svg>
+		</button>
+
+
+		<div class="products">
+			<h2 class="products__title">Buy now</h2>
+			<ul class="products__list">
+				<li class="products__ice-cream">
+					<h3 class="products__name">ice cream</h3>
+				</li>
+				<li class="products__ice-coffee">
+					<h3 class="products__name">ice coffee</h3>
+				</li>
+				<li class="products__milkshake">
+					<h3 class="products__name">milkshake</h3>
+				</li>
+			</ul>
+		</div>
+		<form class="buy-form" action="">
+			<label for="name"></label>
+			<input class="form-name" type="name" placeholder="Name" />
+			<label for="tel"></label>
+			<input class="form-tel" type="tel" placeholder="Phone" />
+			<label for="comment"></label>
+			<textarea class="buy-comment" name="comment" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+		</form>
+
+		<button class="buy__submit-button" type="submit">Submit</button>
+
+	</div>
+</div>
