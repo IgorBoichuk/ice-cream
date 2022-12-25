@@ -154,6 +154,7 @@
 }
 
 .form-name {
+  outline: none;
   box-sizing: border-box;
   width: 240px;
   height: 42px;
@@ -162,12 +163,20 @@
   border-radius: 10px;
   color: red;
   padding-left: 10px;
+
+  &:hover,
+  :focus,
+  :active {
+    border: 2px solid #84a178;
+    padding-left: 9px;
+  }
   @media screen and (min-width: $tablet) {
     width: 368px;
   }
 }
 
 .form-tel {
+  outline: none;
   box-sizing: border-box;
   width: 240px;
   height: 42px;
@@ -175,12 +184,18 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   padding-left: 10px;
+  &:hover,
+  :focus {
+    border: 2px solid #84a178;
+    padding-left: 9px;
+  }
   @media screen and (min-width: $tablet) {
     width: 368px;
   }
 }
 
 .form-comment {
+  outline: none;
   box-sizing: border-box;
   width: 240px;
   height: 84px;
@@ -191,6 +206,13 @@
   padding-left: 10px;
   padding-top: 10px;
   resize: none;
+
+  &:hover,
+  :focus {
+    border: 2px solid #84a178;
+    padding-left: 9px;
+    padding-top: 9px;
+  }
   @media screen and (min-width: $tablet) {
     width: 368px;
   }
