@@ -63,6 +63,7 @@
     openIngredientsModalBtn: document.querySelector(
       '[data-ingredients-modal-open]'
     ),
+
     closeIngredientsModalBtn: document.querySelector(
       '[data-ingredients-modal-close]'
     ),
@@ -82,12 +83,8 @@
 
 (() => {
   const refs = {
-    openIngredientsModalBtn: document.querySelector(
-      '[data-buy-modal-open]'
-    ),
-    closeIngredientsModalBtn: document.querySelector(
-      '[data-buy-modal-close]'
-    ),
+    openIngredientsModalBtn: document.querySelector('[data-buy-modal-open]'),
+    closeIngredientsModalBtn: document.querySelector('[data-buy-modal-close]'),
     IngredientsModal: document.querySelector('[data-buy-modal]'),
   };
 
@@ -104,12 +101,8 @@
 
 (() => {
   const refs = {
-    openIngredientsModalBtn: document.querySelector(
-      '[data-buy2-modal-open]'
-    ),
-    closeIngredientsModalBtn: document.querySelector(
-      '[data-buy2-modal-close]'
-    ),
+    openIngredientsModalBtn: document.querySelector('[data-buy2-modal-open]'),
+    closeIngredientsModalBtn: document.querySelector('[data-buy2-modal-close]'),
     IngredientsModal: document.querySelector('[data-buy2-modal]'),
   };
 
@@ -121,6 +114,3 @@
     refs.IngredientsModal.classList.toggle('is-hidden');
   }
 })();
-
-
-
