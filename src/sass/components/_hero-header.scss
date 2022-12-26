@@ -17,6 +17,13 @@
 		height: 66px;
 	}
 	@media screen and (min-width: 1200px) {
+		height: 76px;
+	}
+}
+
+.logo {
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 5px;
 	}
 }
 
@@ -31,7 +38,7 @@
 }
 
 .nav__item {
-	padding-top: 32px;
+	padding-top: 24px;
 	margin-right: 28px;
 
 	transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -218,7 +225,7 @@
 		margin-top: 24px;
 	}
 	@media screen and (min-width: 1200px) {
-		margin-top: 20px;
+		margin-top: 15px;
 	}
 }
 
@@ -304,8 +311,9 @@
 }
 
 .hero__products {
-	display: block;
+	z-index: 1;
 	cursor: pointer;
+	background-color: transparent;
 	border: 2px solid var(--button-background);
 	border-radius: 8px;
 	font-weight: 600;
@@ -345,6 +353,7 @@
 }
 
 .hero__how {
+	z-index: 1;
 	padding: 20px 0;
 	display: block;
 	font-weight: 600;
