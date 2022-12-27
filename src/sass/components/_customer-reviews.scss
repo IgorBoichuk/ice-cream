@@ -168,3 +168,12 @@ p.customer__text {
     margin-bottom: 228px;
   }
 }
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  border: rgba(252, 252, 252, 1) solid 1px;
+  background-color: rgb(203, 215, 198);
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: rgba(132, 161, 120, 1);
+}
