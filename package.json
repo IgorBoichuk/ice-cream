@@ -1,7 +1,8 @@
 {
   "name": "ice-cream",
   "version": "2.0.0",
-  "description": "",
+  "homepage": "https://IgorBoichuk.github.io/ice-cream",
+  "description": "ice-cream",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream/"
